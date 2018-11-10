@@ -1,20 +1,16 @@
 PODS:
-  - Beethoven (4.0.2):
-    - Pitchy (~> 3.0)
-  - Pitchy (3.0.0)
+  - AudioKit/Core (4.5.4)
 
 DEPENDENCIES:
-  - Beethoven
+  - AudioKit/Core
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Beethoven
-    - Pitchy
+    - AudioKit
 
 SPEC CHECKSUMS:
-  Beethoven: e517331e5087064e1c1fd3d3775fddb8d9f3017d
-  Pitchy: 15407e4425b6d88fa3e7eef8927ba659fab52d7a
+  AudioKit: af3f5b73e22f85f3cd03076fea8afbb9658f0938
 
-PODFILE CHECKSUM: f51a6a5c8cd4cddab808b7c5d9a381164e6db508
+PODFILE CHECKSUM: 4952cc001bf10b484470ee0846d5f3be036cd474
 
 COCOAPODS: 1.5.3
