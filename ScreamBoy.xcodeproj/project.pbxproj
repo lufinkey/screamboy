@@ -13,6 +13,8 @@
 		A0AD768D2197646700F9A3A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768B2197646700F9A3A2 /* Main.storyboard */; };
 		A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768E2197647700F9A3A2 /* Assets.xcassets */; };
 		A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */; };
+		A0C4043A2197742000013D81 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C404392197742000013D81 /* Beethoven.framework */; };
+		A0C4043C2197742500013D81 /* Pitchy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4043B2197742500013D81 /* Pitchy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		A0AD768E2197647700F9A3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AD76912197647700F9A3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0AD76932197647700F9A3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C404392197742000013D81 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4043B2197742500013D81 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C4043C2197742500013D81 /* Pitchy.framework in Frameworks */,
+				A0C4043A2197742000013D81 /* Beethoven.framework in Frameworks */,
 				477F0A41890D02DF4D6001CD /* Pods_ScreamBoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +49,8 @@
 		63309112B3A76D9DECFBD1A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0C4043B2197742500013D81 /* Pitchy.framework */,
+				A0C404392197742000013D81 /* Beethoven.framework */,
 				644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */,
 			);
 			name = Frameworks;
@@ -69,14 +77,22 @@
 		A0AD76862197646700F9A3A2 /* ScreamBoy */ = {
 			isa = PBXGroup;
 			children = (
-				A0AD76872197646700F9A3A2 /* AppDelegate.swift */,
-				A0AD76892197646700F9A3A2 /* ViewController.swift */,
+				A0C40438219773AD00013D81 /* src */,
 				A0AD768B2197646700F9A3A2 /* Main.storyboard */,
 				A0AD768E2197647700F9A3A2 /* Assets.xcassets */,
 				A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */,
 				A0AD76932197647700F9A3A2 /* Info.plist */,
 			);
 			path = ScreamBoy;
+			sourceTree = "<group>";
+		};
+		A0C40438219773AD00013D81 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0AD76872197646700F9A3A2 /* AppDelegate.swift */,
+				A0AD76892197646700F9A3A2 /* ViewController.swift */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		D91BD4DC2EE9C73162ECD6C1 /* Pods */ = {
