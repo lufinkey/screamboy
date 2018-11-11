@@ -8,27 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		477F0A41890D02DF4D6001CD /* Pods_ScreamBoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */; };
-		A0AD76882197646700F9A3A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD76872197646700F9A3A2 /* AppDelegate.swift */; };
-		A0AD768A2197646700F9A3A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD76892197646700F9A3A2 /* ViewController.swift */; };
-		A0AD768D2197646700F9A3A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768B2197646700F9A3A2 /* Main.storyboard */; };
 		A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768E2197647700F9A3A2 /* Assets.xcassets */; };
 		A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */; };
-		A0C4043A2197742000013D81 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C404392197742000013D81 /* Beethoven.framework */; };
-		A0C4043C2197742500013D81 /* Pitchy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4043B2197742500013D81 /* Pitchy.framework */; };
+		A0C4044221979C0A00013D81 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0C4044121979C0A00013D81 /* main.cpp */; };
+		A0C4044521979C5F00013D81 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0C4044321979C5F00013D81 /* Game.cpp */; };
+		A0C4044B21979DDF00013D81 /* libGameLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4044A21979DDF00013D81 /* libGameLibrary.a */; };
+		A0C4046321979F5900013D81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045821979F5700013D81 /* AVFoundation.framework */; };
+		A0C4046421979F5900013D81 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045921979F5700013D81 /* ImageIO.framework */; };
+		A0C4046521979F5900013D81 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045A21979F5700013D81 /* GameController.framework */; };
+		A0C4046621979F5900013D81 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045B21979F5800013D81 /* OpenGLES.framework */; };
+		A0C4046721979F5900013D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045C21979F5800013D81 /* UIKit.framework */; };
+		A0C4046821979F5900013D81 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045D21979F5800013D81 /* CoreMotion.framework */; };
+		A0C4046921979F5900013D81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045E21979F5800013D81 /* CoreGraphics.framework */; };
+		A0C4046A21979F5900013D81 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045F21979F5800013D81 /* MobileCoreServices.framework */; };
+		A0C4046B21979F5900013D81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046021979F5800013D81 /* QuartzCore.framework */; };
+		A0C4046C21979F5900013D81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046121979F5800013D81 /* AudioToolbox.framework */; };
+		A0C4046D21979F5900013D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046221979F5900013D81 /* Foundation.framework */; };
+		A0C405092197A6B600013D81 /* MicAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C405072197A6B600013D81 /* MicAnalyzer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamBoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EF7ED02DD07831A8399E6D /* Pods-ScreamBoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.release.xcconfig"; sourceTree = "<group>"; };
 		A0AD76842197646700F9A3A2 /* ScreamBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0AD76872197646700F9A3A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0AD76892197646700F9A3A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0AD768C2197646700F9A3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0AD768E2197647700F9A3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AD76912197647700F9A3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0AD76932197647700F9A3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C404392197742000013D81 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C4043B2197742500013D81 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4044121979C0A00013D81 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A0C4044321979C5F00013D81 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		A0C4044421979C5F00013D81 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		A0C4044A21979DDF00013D81 /* libGameLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGameLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4044C21979DDF00013D81 /* libSDL2_image.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4044E21979DDF00013D81 /* libSDL2_mixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_mixer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4045021979DDF00013D81 /* libSDL2_ttf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_ttf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4045221979DDF00013D81 /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4045821979F5700013D81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A0C4045921979F5700013D81 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A0C4045A21979F5700013D81 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		A0C4045B21979F5800013D81 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A0C4045C21979F5800013D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0C4045D21979F5800013D81 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A0C4045E21979F5800013D81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0C4045F21979F5800013D81 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A0C4046021979F5800013D81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0C4046121979F5800013D81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0C4046221979F5900013D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0C404772197A0A800013D81 /* GameLibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameLibrary.hpp; sourceTree = "<group>"; };
+		A0C405072197A6B600013D81 /* MicAnalyzer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MicAnalyzer.mm; sourceTree = "<group>"; };
+		A0C405082197A6B600013D81 /* MicAnalyzer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MicAnalyzer.hpp; sourceTree = "<group>"; };
 		E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,8 +66,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C4043C2197742500013D81 /* Pitchy.framework in Frameworks */,
-				A0C4043A2197742000013D81 /* Beethoven.framework in Frameworks */,
+				A0C4046321979F5900013D81 /* AVFoundation.framework in Frameworks */,
+				A0C4046421979F5900013D81 /* ImageIO.framework in Frameworks */,
+				A0C4046521979F5900013D81 /* GameController.framework in Frameworks */,
+				A0C4046621979F5900013D81 /* OpenGLES.framework in Frameworks */,
+				A0C4046721979F5900013D81 /* UIKit.framework in Frameworks */,
+				A0C4046821979F5900013D81 /* CoreMotion.framework in Frameworks */,
+				A0C4046921979F5900013D81 /* CoreGraphics.framework in Frameworks */,
+				A0C4046A21979F5900013D81 /* MobileCoreServices.framework in Frameworks */,
+				A0C4046B21979F5900013D81 /* QuartzCore.framework in Frameworks */,
+				A0C4046C21979F5900013D81 /* AudioToolbox.framework in Frameworks */,
+				A0C4046D21979F5900013D81 /* Foundation.framework in Frameworks */,
+				A0C4044B21979DDF00013D81 /* libGameLibrary.a in Frameworks */,
 				477F0A41890D02DF4D6001CD /* Pods_ScreamBoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +88,22 @@
 		63309112B3A76D9DECFBD1A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0C4046121979F5800013D81 /* AudioToolbox.framework */,
+				A0C4045821979F5700013D81 /* AVFoundation.framework */,
+				A0C4045E21979F5800013D81 /* CoreGraphics.framework */,
+				A0C4045D21979F5800013D81 /* CoreMotion.framework */,
+				A0C4046221979F5900013D81 /* Foundation.framework */,
+				A0C4045A21979F5700013D81 /* GameController.framework */,
+				A0C4045921979F5700013D81 /* ImageIO.framework */,
+				A0C4045F21979F5800013D81 /* MobileCoreServices.framework */,
+				A0C4045B21979F5800013D81 /* OpenGLES.framework */,
+				A0C4046021979F5800013D81 /* QuartzCore.framework */,
+				A0C4045C21979F5800013D81 /* UIKit.framework */,
+				A0C4044A21979DDF00013D81 /* libGameLibrary.a */,
+				A0C4044C21979DDF00013D81 /* libSDL2_image.a */,
+				A0C4044E21979DDF00013D81 /* libSDL2_mixer.a */,
+				A0C4045021979DDF00013D81 /* libSDL2_ttf.a */,
+				A0C4045221979DDF00013D81 /* libSDL2.a */,
 				A0C4043B2197742500013D81 /* Pitchy.framework */,
 				A0C404392197742000013D81 /* Beethoven.framework */,
 				644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */,
@@ -78,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				A0C40438219773AD00013D81 /* src */,
-				A0AD768B2197646700F9A3A2 /* Main.storyboard */,
 				A0AD768E2197647700F9A3A2 /* Assets.xcassets */,
 				A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */,
 				A0AD76932197647700F9A3A2 /* Info.plist */,
@@ -89,10 +143,30 @@
 		A0C40438219773AD00013D81 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A0AD76872197646700F9A3A2 /* AppDelegate.swift */,
-				A0AD76892197646700F9A3A2 /* ViewController.swift */,
+				A0C405062197A64C00013D81 /* audioinput */,
+				A0C4046E21979FC800013D81 /* import */,
+				A0C4044121979C0A00013D81 /* main.cpp */,
+				A0C4044321979C5F00013D81 /* Game.cpp */,
+				A0C4044421979C5F00013D81 /* Game.hpp */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		A0C4046E21979FC800013D81 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				A0C404772197A0A800013D81 /* GameLibrary.hpp */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		A0C405062197A64C00013D81 /* audioinput */ = {
+			isa = PBXGroup;
+			children = (
+				A0C405072197A6B600013D81 /* MicAnalyzer.mm */,
+				A0C405082197A6B600013D81 /* MicAnalyzer.hpp */,
+			);
+			path = audioinput;
 			sourceTree = "<group>";
 		};
 		D91BD4DC2EE9C73162ECD6C1 /* Pods */ = {
@@ -165,7 +239,6 @@
 			files = (
 				A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */,
 				A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */,
-				A0AD768D2197646700F9A3A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,22 +274,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AD768A2197646700F9A3A2 /* ViewController.swift in Sources */,
-				A0AD76882197646700F9A3A2 /* AppDelegate.swift in Sources */,
+				A0C4044221979C0A00013D81 /* main.cpp in Sources */,
+				A0C4044521979C5F00013D81 /* Game.cpp in Sources */,
+				A0C405092197A6B600013D81 /* MicAnalyzer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0AD768B2197646700F9A3A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0AD768C2197646700F9A3A2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,8 +415,14 @@
 			baseConfigurationReference = E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					external/GameLibrary/include,
+					ScreamBoy/src,
+				);
 				INFOPLIST_FILE = ScreamBoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,8 +439,14 @@
 			baseConfigurationReference = 76EF7ED02DD07831A8399E6D /* Pods-ScreamBoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					external/GameLibrary/include,
+					ScreamBoy/src,
+				);
 				INFOPLIST_FILE = ScreamBoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

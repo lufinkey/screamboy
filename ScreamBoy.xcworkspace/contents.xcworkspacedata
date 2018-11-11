@@ -5,6 +5,9 @@
       location = "group:ScreamBoy.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:external/GameLibrary/projects/xcode-iOS/GameLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
