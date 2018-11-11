@@ -1,10 +1,11 @@
 
 #include "MicAnalyzer.hpp"
+
+#if defined(TARGETPLATFORM_IOS) || defined(TARGETPLATFORM_MAC)
 #import <AudioKit/AudioKit.h>
 #import <AudioKit/AudioKit-Swift.h>
 
 namespace sb {
-#if defined(TARGETPLATFORM_IOS) || defined(TARGETPLATFORM_MAC)
 	struct MicInputData {
 		MicInputData() {
 			microphone = [[AKMicrophone alloc] init];
@@ -16,11 +17,15 @@ namespace sb {
 	};
 	
 	MicAnalyzer::MicAnalyzer()
-		: inputData(new MicInputData()) {
+		: inputData(new MicInputData()),
+		started(false) {
 		//
 	}
 	
 	MicAnalyzer::~MicAnalyzer() {
+		if(started) {
+			stop();
+		}
 		delete inputData;
 	}
 	
@@ -31,11 +36,21 @@ namespace sb {
 		}
 		[inputData->microphone start];
 		[inputData->frequencyTracker start];
+		started = true;
+	}
+	
+	void MicAnalyzer::stop() {
+		[inputData->frequencyTracker stop];
+		[inputData->microphone stop];
+		NSError* error = nil;
+		if(![AudioKit stopAndReturnError:&error]) {
+			Console::writeError(String(error.localizedDescription));
+		}
+		started = false;
 	}
 	
 	double MicAnalyzer::getFrequency() const {
 		return inputData->frequencyTracker.frequency;
 	}
-	
-#endif
 }
+#endif

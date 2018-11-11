@@ -13,10 +13,12 @@ namespace sb {
 		virtual ~MicAnalyzer();
 		
 		void start();
+		void stop();
 		
 		double getFrequency() const;
 		
 	private:
 		MicInputData* inputData;
+		bool started;
 	};
 }
