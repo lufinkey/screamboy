@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		477F0A41890D02DF4D6001CD /* Pods_ScreamBoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */; };
+		29580BEA2521871800176CDE /* Pods_ScreamBoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCB6D9F5ADD7C6CFAECB15E /* Pods_ScreamBoy.framework */; };
+		A0230B942198C6360088812C /* MicAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0230B8E2198C6360088812C /* MicAnalyzer.mm */; };
+		A0230B952198C6360088812C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0230B8F2198C6360088812C /* Game.cpp */; };
+		A0230B962198C6360088812C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0230B932198C6360088812C /* main.cpp */; };
 		A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768E2197647700F9A3A2 /* Assets.xcassets */; };
 		A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */; };
-		A0C4044221979C0A00013D81 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0C4044121979C0A00013D81 /* main.cpp */; };
-		A0C4044521979C5F00013D81 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0C4044321979C5F00013D81 /* Game.cpp */; };
 		A0C4044B21979DDF00013D81 /* libGameLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4044A21979DDF00013D81 /* libGameLibrary.a */; };
 		A0C4046321979F5900013D81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045821979F5700013D81 /* AVFoundation.framework */; };
 		A0C4046421979F5900013D81 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4045921979F5700013D81 /* ImageIO.framework */; };
@@ -24,26 +25,20 @@
 		A0C4046B21979F5900013D81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046021979F5800013D81 /* QuartzCore.framework */; };
 		A0C4046C21979F5900013D81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046121979F5800013D81 /* AudioToolbox.framework */; };
 		A0C4046D21979F5900013D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4046221979F5900013D81 /* Foundation.framework */; };
-		A0C405092197A6B600013D81 /* MicAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0C405072197A6B600013D81 /* MicAnalyzer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamBoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76EF7ED02DD07831A8399E6D /* Pods-ScreamBoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.release.xcconfig"; sourceTree = "<group>"; };
+		A0230B8D2198C6360088812C /* MicAnalyzer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MicAnalyzer.hpp; sourceTree = "<group>"; };
+		A0230B8E2198C6360088812C /* MicAnalyzer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MicAnalyzer.mm; sourceTree = "<group>"; };
+		A0230B8F2198C6360088812C /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		A0230B902198C6360088812C /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		A0230B922198C6360088812C /* GameLibrary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLibrary.hpp; sourceTree = "<group>"; };
+		A0230B932198C6360088812C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A0AD76842197646700F9A3A2 /* ScreamBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AD768E2197647700F9A3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AD76912197647700F9A3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0AD76932197647700F9A3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0C404392197742000013D81 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4043B2197742500013D81 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4044121979C0A00013D81 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A0C4044321979C5F00013D81 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		A0C4044421979C5F00013D81 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		A0C4044A21979DDF00013D81 /* libGameLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGameLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4044C21979DDF00013D81 /* libSDL2_image.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4044E21979DDF00013D81 /* libSDL2_mixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_mixer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4045021979DDF00013D81 /* libSDL2_ttf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_ttf.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C4045221979DDF00013D81 /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C4045821979F5700013D81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0C4045921979F5700013D81 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A0C4045A21979F5700013D81 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -55,10 +50,9 @@
 		A0C4046021979F5800013D81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0C4046121979F5800013D81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0C4046221979F5900013D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A0C404772197A0A800013D81 /* GameLibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameLibrary.hpp; sourceTree = "<group>"; };
-		A0C405072197A6B600013D81 /* MicAnalyzer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MicAnalyzer.mm; sourceTree = "<group>"; };
-		A0C405082197A6B600013D81 /* MicAnalyzer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MicAnalyzer.hpp; sourceTree = "<group>"; };
-		E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.debug.xcconfig"; sourceTree = "<group>"; };
+		A261812441E0168476F93273 /* Pods-ScreamBoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.release.xcconfig"; sourceTree = "<group>"; };
+		CBCB6D9F5ADD7C6CFAECB15E /* Pods_ScreamBoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamBoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70F5E9B67B547E41885F047 /* Pods-ScreamBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamBoy.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ScreamBoy/Pods-ScreamBoy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +72,22 @@
 				A0C4046C21979F5900013D81 /* AudioToolbox.framework in Frameworks */,
 				A0C4046D21979F5900013D81 /* Foundation.framework in Frameworks */,
 				A0C4044B21979DDF00013D81 /* libGameLibrary.a in Frameworks */,
-				477F0A41890D02DF4D6001CD /* Pods_ScreamBoy.framework in Frameworks */,
+				29580BEA2521871800176CDE /* Pods_ScreamBoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06673B56DDE2B6B74A8B139E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F70F5E9B67B547E41885F047 /* Pods-ScreamBoy.debug.xcconfig */,
+				A261812441E0168476F93273 /* Pods-ScreamBoy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63309112B3A76D9DECFBD1A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,24 +103,49 @@
 				A0C4046021979F5800013D81 /* QuartzCore.framework */,
 				A0C4045C21979F5800013D81 /* UIKit.framework */,
 				A0C4044A21979DDF00013D81 /* libGameLibrary.a */,
-				A0C4044C21979DDF00013D81 /* libSDL2_image.a */,
-				A0C4044E21979DDF00013D81 /* libSDL2_mixer.a */,
-				A0C4045021979DDF00013D81 /* libSDL2_ttf.a */,
-				A0C4045221979DDF00013D81 /* libSDL2.a */,
-				A0C4043B2197742500013D81 /* Pitchy.framework */,
-				A0C404392197742000013D81 /* Beethoven.framework */,
-				644D4E0BC2B8C97B569D46B9 /* Pods_ScreamBoy.framework */,
+				CBCB6D9F5ADD7C6CFAECB15E /* Pods_ScreamBoy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0230B8B2198C6360088812C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0230B8C2198C6360088812C /* audioinput */,
+				A0230B912198C6360088812C /* import */,
+				A0230B8F2198C6360088812C /* Game.cpp */,
+				A0230B902198C6360088812C /* Game.hpp */,
+				A0230B932198C6360088812C /* main.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		A0230B8C2198C6360088812C /* audioinput */ = {
+			isa = PBXGroup;
+			children = (
+				A0230B8D2198C6360088812C /* MicAnalyzer.hpp */,
+				A0230B8E2198C6360088812C /* MicAnalyzer.mm */,
+			);
+			path = audioinput;
+			sourceTree = "<group>";
+		};
+		A0230B912198C6360088812C /* import */ = {
+			isa = PBXGroup;
+			children = (
+				A0230B922198C6360088812C /* GameLibrary.hpp */,
+			);
+			path = import;
 			sourceTree = "<group>";
 		};
 		A0AD767B2197646600F9A3A2 = {
 			isa = PBXGroup;
 			children = (
-				A0AD76862197646700F9A3A2 /* ScreamBoy */,
+				A0AD76862197646700F9A3A2 /* project-assets */,
+				A0230B8B2198C6360088812C /* src */,
 				A0AD76852197646700F9A3A2 /* Products */,
-				D91BD4DC2EE9C73162ECD6C1 /* Pods */,
 				63309112B3A76D9DECFBD1A0 /* Frameworks */,
+				06673B56DDE2B6B74A8B139E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,53 +157,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0AD76862197646700F9A3A2 /* ScreamBoy */ = {
+		A0AD76862197646700F9A3A2 /* project-assets */ = {
 			isa = PBXGroup;
 			children = (
-				A0C40438219773AD00013D81 /* src */,
 				A0AD768E2197647700F9A3A2 /* Assets.xcassets */,
 				A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */,
 				A0AD76932197647700F9A3A2 /* Info.plist */,
 			);
-			path = ScreamBoy;
-			sourceTree = "<group>";
-		};
-		A0C40438219773AD00013D81 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				A0C405062197A64C00013D81 /* audioinput */,
-				A0C4046E21979FC800013D81 /* import */,
-				A0C4044121979C0A00013D81 /* main.cpp */,
-				A0C4044321979C5F00013D81 /* Game.cpp */,
-				A0C4044421979C5F00013D81 /* Game.hpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		A0C4046E21979FC800013D81 /* import */ = {
-			isa = PBXGroup;
-			children = (
-				A0C404772197A0A800013D81 /* GameLibrary.hpp */,
-			);
-			path = import;
-			sourceTree = "<group>";
-		};
-		A0C405062197A64C00013D81 /* audioinput */ = {
-			isa = PBXGroup;
-			children = (
-				A0C405072197A6B600013D81 /* MicAnalyzer.mm */,
-				A0C405082197A6B600013D81 /* MicAnalyzer.hpp */,
-			);
-			path = audioinput;
-			sourceTree = "<group>";
-		};
-		D91BD4DC2EE9C73162ECD6C1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */,
-				76EF7ED02DD07831A8399E6D /* Pods-ScreamBoy.release.xcconfig */,
-			);
-			name = Pods;
+			path = "project-assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C4044221979C0A00013D81 /* main.cpp in Sources */,
-				A0C4044521979C5F00013D81 /* Game.cpp in Sources */,
-				A0C405092197A6B600013D81 /* MicAnalyzer.mm in Sources */,
+				A0230B942198C6360088812C /* MicAnalyzer.mm in Sources */,
+				A0230B952198C6360088812C /* Game.cpp in Sources */,
+				A0230B962198C6360088812C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,16 +401,16 @@
 		};
 		A0AD76972197647700F9A3A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3C73844B3273E791C8BE100 /* Pods-ScreamBoy.debug.xcconfig */;
+			baseConfigurationReference = F70F5E9B67B547E41885F047 /* Pods-ScreamBoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					external/GameLibrary/include,
-					ScreamBoy/src,
+					../../external/GameLibrary/include,
+					../../src,
 				);
-				INFOPLIST_FILE = ScreamBoy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/project-assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,16 +425,16 @@
 		};
 		A0AD76982197647700F9A3A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76EF7ED02DD07831A8399E6D /* Pods-ScreamBoy.release.xcconfig */;
+			baseConfigurationReference = A261812441E0168476F93273 /* Pods-ScreamBoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					external/GameLibrary/include,
-					ScreamBoy/src,
+					../../external/GameLibrary/include,
+					../../src,
 				);
-				INFOPLIST_FILE = ScreamBoy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/project-assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
