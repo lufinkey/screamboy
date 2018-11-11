@@ -2,7 +2,6 @@
 #pragma once
 
 #include "import/GameLibrary.hpp"
-#include "audioinput/MicAnalyzer.hpp"
 
 namespace sb
 {
@@ -14,8 +13,5 @@ namespace sb
 		
 		virtual void update(ApplicationData) override;
 		virtual void draw(ApplicationData, Graphics) const override;
-		
-	private:
-		MicAnalyzer micAnalyzer;
     };
 }

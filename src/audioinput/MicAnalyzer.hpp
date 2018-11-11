@@ -4,21 +4,14 @@
 #include "import/GameLibrary.hpp"
 
 namespace sb {
-	struct MicInputData;
-	
 	class MicAnalyzer {
 	public:
-		MicAnalyzer(const MicAnalyzer&) = delete;
-		MicAnalyzer();
-		virtual ~MicAnalyzer();
+		static void start();
+		static void update();
+		static void stop();
 		
-		void start();
-		void stop();
-		
-		double getFrequency() const;
-		
-	private:
-		MicInputData* inputData;
-		bool started;
+		static double getAmplitude();
+		static double getFrequency();
+		static double getPitch();
 	};
 }

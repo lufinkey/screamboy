@@ -6,51 +6,62 @@
 #import <AudioKit/AudioKit-Swift.h>
 
 namespace sb {
-	struct MicInputData {
-		MicInputData() {
-			microphone = [[AKMicrophone alloc] init];
-			frequencyTracker = [[AKFrequencyTracker alloc] init:microphone hopSize:512.0 peakCount:20.0];
-		}
-		
-		AKMicrophone* microphone;
-		AKFrequencyTracker* frequencyTracker;
-	};
-	
-	MicAnalyzer::MicAnalyzer()
-		: inputData(new MicInputData()),
-		started(false) {
-		//
-	}
-	
-	MicAnalyzer::~MicAnalyzer() {
-		if(started) {
-			stop();
-		}
-		delete inputData;
-	}
+	bool MicAnalyzer_started = false;
+	AKMicrophone* MicAnalyzer_microphone = nil;
+	AKFrequencyTracker* MicAnalyzer_tracker = nil;
 	
 	void MicAnalyzer::start() {
+		if(MicAnalyzer_started) {
+			return;
+		}
+		if(MicAnalyzer_microphone == nil) {
+			MicAnalyzer_microphone = [[AKMicrophone alloc] init];
+		}
+		if(MicAnalyzer_tracker == nil) {
+			MicAnalyzer_tracker = [[AKFrequencyTracker alloc] init:MicAnalyzer_microphone hopSize:512.0 peakCount:20.0];
+		}
+		[AudioKit setOutput:[[AKBooster alloc] init:MicAnalyzer_tracker gain:0]];
 		NSError* error = nil;
 		if(![AudioKit startAndReturnError:&error]) {
 			throw Exception(String(error.localizedDescription));
 		}
-		[inputData->microphone start];
-		[inputData->frequencyTracker start];
-		started = true;
+		[MicAnalyzer_microphone start];
+		[MicAnalyzer_tracker start];
+		MicAnalyzer_started = true;
 	}
 	
 	void MicAnalyzer::stop() {
-		[inputData->frequencyTracker stop];
-		[inputData->microphone stop];
+		if(!MicAnalyzer_started) {
+			return;
+		}
+		[MicAnalyzer_tracker stop];
+		[MicAnalyzer_microphone stop];
 		NSError* error = nil;
-		if(![AudioKit stopAndReturnError:&error]) {
+		if(![AudioKit startAndReturnError:&error]) {
 			Console::writeError(String(error.localizedDescription));
 		}
-		started = false;
+		[AudioKit setOutput:nil];
+		MicAnalyzer_started = false;
 	}
 	
-	double MicAnalyzer::getFrequency() const {
-		return inputData->frequencyTracker.frequency;
+	double MicAnalyzer::getAmplitude() {
+		if(MicAnalyzer_tracker == nil) {
+			return 0;
+		}
+		return MicAnalyzer_tracker.amplitude;
+	}
+	
+	double MicAnalyzer::getFrequency() {
+		if(MicAnalyzer_tracker == nil) {
+			return 0;
+		}
+		return MicAnalyzer_tracker.frequency;
+	}
+	
+	double MicAnalyzer::getPitch() {
+		static const float LOG2 = Math::log(2.0);
+		double frequency = getFrequency();
+		return Math::max(0.0, Math::log(frequency / 440.0) / LOG2 * 12.0 + 69.0);
 	}
 }
 #endif
