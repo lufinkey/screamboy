@@ -16,6 +16,7 @@ namespace sb {
 		void start(int index);
 		void stop();
 		
+		double getFrequency() const;
 		double getPitch() const;
 		double getAmplitude() const;
 		

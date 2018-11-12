@@ -10,6 +10,7 @@ namespace sb {
 		SDL_AudioDeviceID deviceId = 0;
 		bool opened = false;
 		
+		double frequency = 0;
 		double pitch = 0;
 		double amplitude = 0;
 		
@@ -29,19 +30,21 @@ namespace sb {
 		for(auto num : floatStream) {
 			dubStream.push_back((double)num);
 		}
-		double pitch = get_pitch_yin(dubStream, 44100);
-		if(pitch > 0) {
+		double frequency = get_pitch_yin(dubStream, 44100);
+		double pitch = 0;
+		if(frequency > 0) {
 			static const float LOG2 = Math::log(2.0);
-			pitch = Math::max(0.0, Math::log(pitch / 440.0) / LOG2 * 12.0 + 69.0);
+			pitch = Math::max(0.0, Math::log(frequency / 440.0) / LOG2 * 12.0 + 69.0);
 		}
 		else {
-			pitch = 0;
+			frequency = 0;
 		}
 		double amplitude = 0;
 		for(double sample : dubStream) {
 			amplitude += sample * sample;
 		}
 		amplitude = Math::sqrt(amplitude / dubStream.size());
+		micData->frequency = frequency;
 		micData->pitch = pitch;
 		micData->amplitude = amplitude;
 	}
@@ -103,6 +106,10 @@ namespace sb {
 		privateData->pitch = 0;
 		privateData->amplitude = 0;
 		privateData->opened = false;
+	}
+	
+	double MicAnalyzer::getFrequency() const {
+		return privateData->frequency;
 	}
 	
 	double MicAnalyzer::getPitch() const {

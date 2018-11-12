@@ -4,11 +4,11 @@
 
 namespace sb {
 	PitchAmplitudePlacerAspect::PitchAmplitudePlacerAspect(RectangleD rect)
-	: rect(rect),
-	pitch(0),
-	pitchVelocity(2.0),
-	amplitude(0),
-	amplitudeVelocity(2.0) {
+		: rect(rect),
+		pitch(0),
+		pitchVelocity(2.0),
+		amplitude(0),
+		amplitudeVelocity(2.0) {
 		//
 	}
 	
