@@ -11,6 +11,9 @@
 		A0230B942198C6360088812C /* MicAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0230B8E2198C6360088812C /* MicAnalyzer.mm */; };
 		A0230B952198C6360088812C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0230B8F2198C6360088812C /* Game.cpp */; };
 		A0230B962198C6360088812C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0230B932198C6360088812C /* main.cpp */; };
+		A082E12F2199067B00E1EE7C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A082E12E2199067A00E1EE7C /* assets */; };
+		A082E132219907BC00E1EE7C /* ScreamBoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A082E130219907BC00E1EE7C /* ScreamBoi.cpp */; };
+		A082E13621992A5E00E1EE7C /* PitchAmplitudePlacerAspect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A082E13421992A5E00E1EE7C /* PitchAmplitudePlacerAspect.cpp */; };
 		A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AD768E2197647700F9A3A2 /* Assets.xcassets */; };
 		A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AD76902197647700F9A3A2 /* LaunchScreen.storyboard */; };
 		A0C4044B21979DDF00013D81 /* libGameLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4044A21979DDF00013D81 /* libGameLibrary.a */; };
@@ -34,6 +37,11 @@
 		A0230B902198C6360088812C /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		A0230B922198C6360088812C /* GameLibrary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLibrary.hpp; sourceTree = "<group>"; };
 		A0230B932198C6360088812C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A082E12E2199067A00E1EE7C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../assets; sourceTree = "<group>"; };
+		A082E130219907BC00E1EE7C /* ScreamBoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreamBoi.cpp; sourceTree = "<group>"; };
+		A082E131219907BC00E1EE7C /* ScreamBoi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScreamBoi.hpp; sourceTree = "<group>"; };
+		A082E13421992A5E00E1EE7C /* PitchAmplitudePlacerAspect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PitchAmplitudePlacerAspect.cpp; sourceTree = "<group>"; };
+		A082E13521992A5E00E1EE7C /* PitchAmplitudePlacerAspect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PitchAmplitudePlacerAspect.hpp; sourceTree = "<group>"; };
 		A0AD76842197646700F9A3A2 /* ScreamBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AD768E2197647700F9A3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AD76912197647700F9A3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,8 +119,10 @@
 		A0230B8B2198C6360088812C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A082E13321992A1C00E1EE7C /* aspects */,
 				A0230B8C2198C6360088812C /* audioinput */,
 				A0230B912198C6360088812C /* import */,
+				A082E12D2198FA8200E1EE7C /* objects */,
 				A0230B8F2198C6360088812C /* Game.cpp */,
 				A0230B902198C6360088812C /* Game.hpp */,
 				A0230B932198C6360088812C /* main.cpp */,
@@ -138,10 +148,29 @@
 			path = import;
 			sourceTree = "<group>";
 		};
+		A082E12D2198FA8200E1EE7C /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				A082E130219907BC00E1EE7C /* ScreamBoi.cpp */,
+				A082E131219907BC00E1EE7C /* ScreamBoi.hpp */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		A082E13321992A1C00E1EE7C /* aspects */ = {
+			isa = PBXGroup;
+			children = (
+				A082E13421992A5E00E1EE7C /* PitchAmplitudePlacerAspect.cpp */,
+				A082E13521992A5E00E1EE7C /* PitchAmplitudePlacerAspect.hpp */,
+			);
+			path = aspects;
+			sourceTree = "<group>";
+		};
 		A0AD767B2197646600F9A3A2 = {
 			isa = PBXGroup;
 			children = (
 				A0AD76862197646700F9A3A2 /* project-assets */,
+				A082E12E2199067A00E1EE7C /* assets */,
 				A0230B8B2198C6360088812C /* src */,
 				A0AD76852197646700F9A3A2 /* Products */,
 				63309112B3A76D9DECFBD1A0 /* Frameworks */,
@@ -226,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A082E12F2199067B00E1EE7C /* assets in Resources */,
 				A0AD76922197647700F9A3A2 /* LaunchScreen.storyboard in Resources */,
 				A0AD768F2197647700F9A3A2 /* Assets.xcassets in Resources */,
 			);
@@ -265,7 +295,9 @@
 			files = (
 				A0230B942198C6360088812C /* MicAnalyzer.mm in Sources */,
 				A0230B952198C6360088812C /* Game.cpp in Sources */,
+				A082E13621992A5E00E1EE7C /* PitchAmplitudePlacerAspect.cpp in Sources */,
 				A0230B962198C6360088812C /* main.cpp in Sources */,
+				A082E132219907BC00E1EE7C /* ScreamBoi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

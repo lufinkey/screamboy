@@ -1,4 +1,6 @@
 
 #include <GameLibrary/GameLibrary.hpp>
 
-using namespace fgl;
+namespace sb {
+	using namespace fgl;
+}
