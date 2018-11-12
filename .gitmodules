@@ -1,3 +1,11 @@
 [submodule "external/GameLibrary"]
 	path = external/GameLibrary
 	url = https://github.com/lufinkey/GameLibrary
+[submodule "external/pitch-detection"]
+	path = external/pitch-detection
+	url = https://github.com/sevagh/pitch-detection
+	ignore = dirty
+[submodule "external/ffts"]
+	path = external/ffts
+	url = https://github.com/anthonix/ffts
+	ignore = dirty

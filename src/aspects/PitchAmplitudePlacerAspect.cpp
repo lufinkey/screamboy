@@ -1,6 +1,6 @@
 
 #include "PitchAmplitudePlacerAspect.hpp"
-#include "MicAnalyzer.hpp"
+#include "audioinput/MicAnalyzer.hpp"
 
 namespace sb {
 	PitchAmplitudePlacerAspect::PitchAmplitudePlacerAspect(RectangleD rect)
