@@ -12,6 +12,9 @@ namespace sb {
 		virtual void update(const ApplicationData& appData) override;
 		virtual void draw(DrawContext context, Graphics graphics) const override;
 		
+		void setDebugDrawEnabled(bool debugDraw);
+		bool isDebugDrawEnabled() const;
+		
 	protected:
 		virtual void onAddObjectToWorld(World* world) override;
 		virtual void onRemoveObjectFromWorld(World* world) override;
@@ -23,5 +26,6 @@ namespace sb {
 		double pitchVelocity;
 		double amplitude;
 		double amplitudeVelocity;
+		bool debugDraw;
 	};
 }

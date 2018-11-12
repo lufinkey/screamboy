@@ -8,7 +8,8 @@ namespace sb {
 		pitch(0),
 		pitchVelocity(1.0),
 		amplitude(0),
-		amplitudeVelocity(0.5) {
+		amplitudeVelocity(0.5),
+		debugDraw(false) {
 		//
 	}
 	
@@ -39,12 +40,22 @@ namespace sb {
 	}
 	
 	void PitchAmplitudePlacerAspect::draw(DrawContext context, Graphics graphics) const {
-		graphics.setColor(Colors::RED);
-		graphics.drawRect(rect);
-		
-		graphics.setColor(Colors::BLACK);
-		graphics.drawString((String)"pitch: "+micAnalyzer.getPitch(), rect.x+10, rect.y+40);
-		graphics.drawString((String)"amplitude: "+micAnalyzer.getAmplitude(), rect.x+10, rect.y+80);
+		if(debugDraw) {
+			graphics.setColor(Colors::RED);
+			graphics.drawRect(rect);
+			
+			graphics.setColor(Colors::BLACK);
+			graphics.drawString((String)"pitch: "+micAnalyzer.getPitch(), rect.x+10, rect.y+40);
+			graphics.drawString((String)"amplitude: "+micAnalyzer.getAmplitude(), rect.x+10, rect.y+80);
+		}
+	}
+	
+	void PitchAmplitudePlacerAspect::setDebugDrawEnabled(bool debugDraw_arg) {
+		debugDraw = debugDraw_arg;
+	}
+	
+	bool PitchAmplitudePlacerAspect::isDebugDrawEnabled() const {
+		return debugDraw;
 	}
 	
 	void PitchAmplitudePlacerAspect::onAddObjectToWorld(World* world) {
