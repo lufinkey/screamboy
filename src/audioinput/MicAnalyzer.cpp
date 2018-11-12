@@ -34,6 +34,9 @@ namespace sb {
 			static const float LOG2 = Math::log(2.0);
 			pitch = Math::max(0.0, Math::log(pitch / 440.0) / LOG2 * 12.0 + 69.0);
 		}
+		else {
+			pitch = 0;
+		}
 		double amplitude = 0;
 		for(double sample : dubStream) {
 			amplitude += sample * sample;
