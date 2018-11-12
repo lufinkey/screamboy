@@ -19,8 +19,8 @@ namespace sb {
 		
 		if(newAmplitude > 0.03) {
 			pitch = pitch + Math::min(((newPitch / 180.0) - pitch), (1.0 * pitchVelocity * frameSpeedMult));
+			amplitude = amplitude + Math::min(((newAmplitude / 0.3) - amplitude), (1.0 * amplitudeVelocity * frameSpeedMult));
 		}
-		amplitude = amplitude + Math::min(((newAmplitude / 0.3) - amplitude), (1.0 * amplitudeVelocity * frameSpeedMult));
 		
 		auto transform2d = getAspect<Transform2DAspect>();
 		auto position = transform2d->getLocalPosition();

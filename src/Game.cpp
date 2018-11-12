@@ -38,11 +38,9 @@ namespace sb {
 	
 	void Game::draw(ApplicationData appData, Graphics graphics) const {
 		world->draw(appData, graphics);
-		/*double pitch = MicAnalyzer::getPitch();
-		auto window = appData.getWindow();
-		auto viewSize = window->getViewport()->getSize();
-		double y = (pitch / 180.0) * viewSize.y;
-		graphics.setColor(Colors::RED);
-		graphics.fillRect((viewSize.x/2.0) - 5.0, y, 10.0, 5.0);*/
+		
+		graphics.setColor(Colors::BLACK);
+		graphics.drawString((String)"pitch: "+MicAnalyzer::getPitch(), 10, 40);
+		graphics.drawString((String)"amplitude: "+MicAnalyzer::getAmplitude(), 10, 80);
 	}
 }
