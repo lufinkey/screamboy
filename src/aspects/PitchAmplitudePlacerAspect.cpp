@@ -6,9 +6,9 @@ namespace sb {
 	PitchAmplitudePlacerAspect::PitchAmplitudePlacerAspect(RectangleD rect)
 		: rect(rect),
 		pitch(0),
-		pitchVelocity(2.0),
+		pitchVelocity(1.0),
 		amplitude(0),
-		amplitudeVelocity(2.0) {
+		amplitudeVelocity(0.5) {
 		//
 	}
 	
@@ -19,12 +19,12 @@ namespace sb {
 		
 		if(newAmplitude > 0.04) {
 			if(newPitch > 0) {
-				double constrainedPitch = (newPitch - 40) / 60.0;
+				double constrainedPitch = (newPitch - 40) / 40.0;
 				if(constrainedPitch < 0) {
 					constrainedPitch = 0;
 				}
-				else if(constrainedPitch > 60) {
-					constrainedPitch = 60;
+				else if(constrainedPitch > 40) {
+					constrainedPitch = 40;
 				}
 				pitch = pitch + Math::min((constrainedPitch - pitch), (1.0 * pitchVelocity * frameSpeedMult));
 			}
